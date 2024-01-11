@@ -7,8 +7,7 @@ class CartProvider extends ChangeNotifier {
   List<CartItem> _cartItems = [];
 
   List<CartItem> get cartItems => _cartItems;
-
-
+  
   void clearInitialCart() {
     _cartItems.clear();
   }
