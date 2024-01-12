@@ -7,11 +7,12 @@ class CartProvider extends ChangeNotifier {
   List<CartItem> _cartItems = [];
 
   List<CartItem> get cartItems => _cartItems;
-  
+
   void clearInitialCart() {
     _cartItems.clear();
   }
 
+  
   void addToCart(String itemName, double price, {int quantity = 1}) {
 
     int index = _cartItems.indexWhere((item) => item.itemName == itemName);
