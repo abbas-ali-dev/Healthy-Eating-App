@@ -11,8 +11,6 @@ class CartProvider extends ChangeNotifier {
   void clearInitialCart() {
     _cartItems.clear();
   }
-
-
   
   void addToCart(String itemName, double price, {int quantity = 1}) {
 
