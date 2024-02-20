@@ -29,8 +29,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
     CartProvider cartProvider = Provider.of<CartProvider>(context);
 
     HomePage homePage = HomePage();
-
-
+    
     return Scaffold(
       appBar: CustomAppBar(title: "Checkout", showCartIcon: true),
       body: SingleChildScrollView(
