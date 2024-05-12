@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../controller/firebase_authentication.dart';
 import '../../components/custom_app_bar.dart';
@@ -117,7 +116,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: TextStyle(color: Colors.white),
                   ),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.lightGreen,
+                    backgroundColor: Colors.lightGreen,
                     side: BorderSide(color: Colors.lightGreen, width: 2),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),

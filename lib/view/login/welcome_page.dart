@@ -20,7 +20,7 @@ class WelcomePage extends StatelessWidget {
           style: TextStyle(color: textColors),
         ),
         style: ElevatedButton.styleFrom(
-          primary: color,
+          backgroundColor: color,
           side: BorderSide(color: Colors.green, width: 2),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20.0),
