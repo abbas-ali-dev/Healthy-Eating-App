@@ -1,6 +1,7 @@
 import 'package:assignment_two/view/admin/view_manu_page.dart';
 import 'package:flutter/material.dart';
 import 'add_menu_page.dart';
+import 'admin_page.dart';
 import '../../components/custom_app_bar.dart';
 import 'delete_menu_page.dart';
 
@@ -16,7 +17,7 @@ class ManageMenuPage extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.lightGreen,
+          primary: Colors.lightGreen,
           side: BorderSide(color: Colors.lightGreen, width: 2),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20.0),

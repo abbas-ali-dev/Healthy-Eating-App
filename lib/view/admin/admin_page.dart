@@ -15,7 +15,7 @@ class AdminPage extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.lightGreen,
+          primary: Colors.lightGreen,
           side: BorderSide(color: Colors.lightGreen, width: 2),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20.0),

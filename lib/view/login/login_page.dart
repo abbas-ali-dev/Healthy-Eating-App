@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../controller/firebase_authentication.dart';
 import '../../components/custom_app_bar.dart';
 import '../user/homepage.dart';
+import '../admin/admin_page.dart';
 import 'sign_up_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -92,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.lightGreen,
+                  primary: Colors.lightGreen,
                   side: BorderSide(color: Colors.lightGreen, width: 2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
