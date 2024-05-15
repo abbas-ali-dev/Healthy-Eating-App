@@ -93,7 +93,7 @@ class AddMenuPage extends StatelessWidget {
                       fontSize: 24,
                       fontWeight: FontWeight.bold),
                 ),
-                
+
                 SizedBox(height: 20.0),
                 // TextFormFields
                 TextFormField(
