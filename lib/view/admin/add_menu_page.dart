@@ -63,7 +63,7 @@ class AddMenuPage extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          primary: Colors.lightGreen,
+          backgroundColor: Colors.lightGreen,
           side: BorderSide(color: Colors.lightGreen, width: 2),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20.0),
@@ -93,14 +93,13 @@ class AddMenuPage extends StatelessWidget {
                       fontSize: 24,
                       fontWeight: FontWeight.bold),
                 ),
-
                 SizedBox(height: 20.0),
                 // TextFormFields
                 TextFormField(
+
                   controller: itemNameController,
                   decoration: InputDecoration(labelText: 'Item Name'),
                 ),
-
                 SizedBox(height: 10.0),
                 TextFormField(
                   controller: quantityController,
@@ -110,7 +109,12 @@ class AddMenuPage extends StatelessWidget {
                 SizedBox(height: 10.0),
                 TextFormField(
                   controller: priceController,
-                  decoration: InputDecoration(labelText: 'Price'),
+                  decoration: InputDecoration(labelText: 'Price', ),
+                  validator: (value) {
+                    if(value == null){
+                      return 'please enter price';
+                    }
+                  },
                 ),
                 SizedBox(height: 20.0),
                 // Confirm button
