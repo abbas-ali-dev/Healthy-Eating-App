@@ -105,7 +105,6 @@ class AddMenuPage extends StatelessWidget {
                   controller: quantityController,
                   decoration: InputDecoration(labelText: 'Description'),
                 ),
-                
                 SizedBox(height: 10.0),
                 TextFormField(
                   controller: priceController,
