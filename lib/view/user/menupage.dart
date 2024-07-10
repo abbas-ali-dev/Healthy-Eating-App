@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../components/custom_app_bar.dart';
 import 'itemdescriptionpage.dart';
-import 'package:provider/provider.dart';
 
 
 class MenuPage extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:assignment_two/view/admin/admin_login.dart';
-import 'package:assignment_two/view/admin/admin_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
