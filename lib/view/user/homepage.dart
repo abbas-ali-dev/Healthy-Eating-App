@@ -4,7 +4,6 @@ import 'menupage.dart';
 
 class HomePage extends StatelessWidget {
   @override
-  
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: "Healthy Eating", showCartIcon: true),
