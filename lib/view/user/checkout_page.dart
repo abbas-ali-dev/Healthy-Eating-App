@@ -21,6 +21,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
   Widget build(BuildContext context) {
     CartProvider cartProvider = Provider.of<CartProvider>(context);
 
+    
     return Scaffold(
       appBar: CustomAppBar(title: "Checkout", showCartIcon: true),
       body: SingleChildScrollView(
