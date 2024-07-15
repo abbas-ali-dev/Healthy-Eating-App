@@ -3,6 +3,9 @@ import '../../components/custom_app_bar.dart';
 import 'menupage.dart';
 
 class HomePage extends StatelessWidget {
+  late String ab;
+  HomePage({this.ab = '================>   Multilevel Inheritance'});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

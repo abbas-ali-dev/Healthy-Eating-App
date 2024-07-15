@@ -1,4 +1,6 @@
 import 'package:assignment_two/view/admin/admin_login.dart';
+import 'package:assignment_two/view/user/homepage.dart';
+import 'package:assignment_two/view/user/itemdescriptionpage.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -8,11 +10,16 @@ import '../../components/custom_app_bar.dart';
 
 
 class CheckoutPage extends StatefulWidget {
+  late String name;
+  CheckoutPage({this.name = ''});
   @override
   _CheckoutPageState createState() => _CheckoutPageState();
 }
 
 class _CheckoutPageState extends State<CheckoutPage> {
+  late String name;
+
+
   final TextEditingController nameController = TextEditingController();
   final TextEditingController addressController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
@@ -21,7 +28,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
   Widget build(BuildContext context) {
     CartProvider cartProvider = Provider.of<CartProvider>(context);
 
-    
+    HomePage homePage = HomePage();
+
     return Scaffold(
       appBar: CustomAppBar(title: "Checkout", showCartIcon: true),
       body: SingleChildScrollView(
@@ -29,6 +37,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Text('This is ========> Inherit${homePage.ab}'),
+            ElevatedButton(onPressed: () {
+              print('========================> ${homePage.ab.characters}');
+            }, child: Text('Multi inherit')),
             Text(
               'Order Summary',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
