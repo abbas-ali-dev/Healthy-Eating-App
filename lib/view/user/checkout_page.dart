@@ -30,7 +30,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
 
     HomePage homePage = HomePage();
 
-    
+
     return Scaffold(
       appBar: CustomAppBar(title: "Checkout", showCartIcon: true),
       body: SingleChildScrollView(
