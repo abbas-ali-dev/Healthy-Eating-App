@@ -1,4 +1,8 @@
-# final_project_healthy_eating
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Dart](https://img.shields.io/badge/dart-100%25-brightgreen)
+![Flutter](https://img.shields.io/badge/Flutter-Cross%20Platform-blue)
+
+# Healthy Eating App
 
 A new Flutter project.
 
